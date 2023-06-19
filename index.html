@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="main-title">Kanban Board</h1>
+    <div class="drag-container">
+        <ul class="drag-list">
+            <!-- category1 -->
+            <li class="drag-column backlog-column">
+                <span class="header">
+                    <h1>Backlog</h1>
+                </span>
+                <div class="custom-scroll" id="backlog-content">
+                    <ul class="drag-item-list" id="backlog-list">
+                        <li class="drag-item" draggable="true">Test1</li>
+                        <li class="drag-item" draggable="true">Test2</li>
+                        <li class="drag-item" draggable="true">Test3</li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- category2 -->
+            <li class="drag-column progress-column">
+                <span class="header">
+                    <h1>Progress</h1>
+                </span>
+                <div class="custom-scroll" id="progress-content">
+                    <ul class="drag-item-list" id="progress-list">
+                        <li class="drag-item" draggable="true">Test1</li>
+                        <li class="drag-item" draggable="true">Test2</li>
+                        <li class="drag-item" draggable="true">Test3</li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- category3 -->
+            <li class="drag-column completed-column">
+                <span class="header">
+                    <h1>Completed</h1>
+                </span>
+                <div class="custom-scroll" id="completed-content">
+                    <ul class="drag-item-list" id="completed-list">
+                    </ul>
+                </div>
+            </li>
+
+            <!-- category4 -->
+            <li class="drag-column onhold-column">
+                <span class="header">
+                    <h1>On Hold</h1>
+                </span>
+                <div class="custom-scroll" id="onhold-content">
+                    <ul class="drag-item-list" id="onhold-list">
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
